@@ -1,0 +1,131 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
+.banner {
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/background.png) no-repeat center;
+	background-size: cover;
+	padding: 35px;
+	text-align: center;
+}
+
+.banner h1 {
+	font-size: 45px;
+	color: white;
+	margin: 0;
+}
+
+.banner p {
+	font-size: 20px;
+	color: black;
+}
+
+.button-pink {
+	background-color: #FF6D83;
+	display: inline-block;
+	padding: 10px;  
+	border-radius: 8px;
+}
+
+.button-pink a {
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+}
+
+.button-pink a:hover {
+	color: #E3C3C5;
+}
+
+.container {
+	margin: 30px auto;
+	width: 800px;
+}
+
+h2 {
+	color: #71AAB3;
+	font-size: 20px;
+	text-align: center;
+}
+
+.card-city {
+	background-color: white;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	border-radius: 4px; 
+	width: 300px;
+	text-align: center;
+  	padding: 24px;
+  	margin: 8px;
+}
+
+.cards {
+	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	grid-gap: 16px;
+}
+
+.card-city img {
+	width: 260px;
+ 	height: 260px;
+  	object-fit: cover;
+  	object-position: center;
+  	border-radius: 6px;
+}
+
+.card-city a {
+	font-size: 20px;
+	color: #F06D80;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.card-city a:hover {
+	color: white;
+	background-color: #FF6D83;
+}
+
+.footer {
+	background-color: #E6F0F2; 
+	padding: 5px 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer p {
+	color: rgb(30,30,30);
+}
+
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-city {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+
+}
